@@ -6,6 +6,8 @@
 // it work everywhere.
 //
 
+require __DIR__ . '/../vendor/autoload.php';
+
 error_reporting(E_ALL | E_STRICT);
 
 if (!defined('PHPUnit_MAIN_METHOD')) {
