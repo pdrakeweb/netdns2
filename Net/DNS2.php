@@ -858,7 +858,9 @@ class Net_DNS2
             //
             if ($tcp_fallback == false) {
 
-                $ns = each($this->nameservers);
+                $ns = current($this->nameservers);
+                next($this->nameservers);
+
                 if ($ns === false) {
 
                     throw new Net_DNS2_Exception(
@@ -867,8 +869,6 @@ class Net_DNS2
                         Net_DNS2_Lookups::E_NS_FAILED
                     );
                 }
-
-                $ns = $ns[1];
             }
 
             //
