@@ -24,3 +24,8 @@ the 1.3.2 release.
   `vendor/bin/phpcs --config-set installed_paths vendor/phpcompatibility/php-compatibility`
 1. Run the compatibility check.
   `./vendor/bin/phpcs -p ./Net --standard=PHPCompatibility`
+
+### PHP STAN
+
+1. Run PHP-STAN against the DNS2 class that we have modified.
+  `vendor/bin/phpstan analyse Net/DNS2.php `
