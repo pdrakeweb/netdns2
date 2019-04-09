@@ -7,6 +7,11 @@
 This library has been forked and updated to have PHP 7.x compatibility added to
 the 1.3.2 release.
 
+#### each()
+
+each() has been deprecated.  current() and next() are being used to replace it
+with as little code impact as possible to reduce risk.
+
 ## Testing
 
 1. Install composer
@@ -14,6 +19,12 @@ the 1.3.2 release.
   `composer install --dev`
 
 ### PHPUnit Tests
+
+The PHPUnit tests we added primarily cover the behavior with a variety of
+nameserver conditions such as valid, invalid and unreachable.  The base record
+type chosen for these tests is A record.  Additionally, these tests cover CNAME
+and TXT record retrieval as these are the record types retrieved within our use
+of this library.
 
 1. Run the tests.
   `php tests/AllTests.php`
