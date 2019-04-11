@@ -12,6 +12,13 @@ the 1.3.2 release.
 each() has been deprecated.  current() and next() are being used to replace it
 with as little code impact as possible to reduce risk.
 
+## Building
+
+1. Create the build
+  `./build.sh`
+1. Copy the resulting artifact to the destination eg.
+  `cp build/Net_DNS2-*.tgz ../fields/puppet/versions/devel/modules/php/files/`
+
 ## Testing
 
 1. Install composer
