@@ -17,6 +17,8 @@ with as little code impact as possible to reduce risk.
 1. Install composer
 1. Install dev dependencies
   `composer install --dev`
+1. Install phpstan library if static analysis is desired (PHP >=7.0 only)
+  `composer require phpstan/phpstan`
 
 ### PHPUnit Tests
 
@@ -39,4 +41,4 @@ of this library.
 ### PHP STAN
 
 1. Run PHP-STAN against the DNS2 class that we have modified.
-  `vendor/bin/phpstan analyse Net/DNS2.php `
+  `vendor/bin/phpstan analyse Net/DNS2.php`

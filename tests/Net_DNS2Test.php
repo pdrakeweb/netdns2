@@ -17,7 +17,7 @@ abstract class Net_DNS2Test extends PHPUnit_Framework_TestCase
     protected $type = 'A';
     protected $class = 'IN';
     protected $name = 'mydomain.com';
-    protected $timeout = 3;
+    protected $timeout = 5;
     protected $use_tcp = NULL;
     protected $randomize_ns = FALSE;
 

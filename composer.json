@@ -18,13 +18,14 @@
         }
     ],
     "require": {
-        "php": ">=5.1.2"
+        "php": ">=5.1.2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+        "phpunit/php-invoker": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "~3.0",
         "squizlabs/php_codesniffer": "3.*",
-        "phpcompatibility/php-compatibility": "*",
-        "phpstan/phpstan": "*"
+        "phpcompatibility/php-compatibility": "*"
     },
     "autoload": {
         "psr-0": { "Net_DNS2": "" }
