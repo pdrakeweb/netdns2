@@ -1,0 +1,16 @@
+language: php
+php:
+  - 5.6
+  - 7.1
+  - 7.2
+  - 7.3
+cache:
+  directories:
+    - $HOME/.composer/cache
+before_install:
+  - composer self-update
+  - composer validate
+install:
+  - composer install
+script:
+  - php tests/AllTests.php
